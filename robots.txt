@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Закрываем служебные файлы от индексации
+Disallow: /submit.php
+Disallow: /privacy.html
+
+# Карта сайта
+Sitemap: https://olgateplyakova34-maker.github.io/-/sitemap.xml

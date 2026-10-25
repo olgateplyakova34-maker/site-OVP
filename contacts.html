@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Ваши Ворота</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Бренды сверху -->
+    <div class="brands-bar">
+        <div class="container">
+            <span>Мы работаем с брендами:</span>
+            <div class="brand-logos">
+            <a href="https://www.hormann.ru/" target="_blank" rel="noopener noreferrer">
+                <img src="images/brands/hormann.png" alt="Hörmann">
+            </a>
+            <a href="https://www.camerussia.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/brands/came.png" alt="CAME">
+            </a>
+            <a href="https://www.niceforyou.com/ru/" target="_blank" rel="noopener noreferrer">
+                <img src="images/brands/nice.png" alt="Nice">
+            </a>
+            <a href="https://doorhan.ru/" target="_blank" rel="noopener noreferrer">
+                <img src="images/brands/doorhan.png" alt="DoorHan">
+            </a>
+            <a href="https://alutech.ru/" target="_blank" rel="noopener noreferrer">
+                <img src="images/brands/alutech.png" alt="Alutech">
+            </a>
+        </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <h1>Контакты</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="portfolio.html">Портфолио</a></li>
+                <li><a href="pricing.html">Прайс</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="certificates.html">Сертификаты</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container" style="padding:40px 0;">
+        <div style="max-width: 600px; margin: 0 auto; background: white; padding: 40px; border-radius: 24px; box-shadow: 0 12px 30px rgba(0,0,0,0.03); border: 1px solid #e2e8f0;">
+            <h3 style="margin-bottom: 25px; font-size: 1.8rem;">Наши контакты</h3>
+            
+            <div style="margin-bottom: 25px;">
+                <p style="font-size: 1.2rem; margin-bottom: 12px;">📞 <strong>Менеджер:</strong> <a href="tel:+79991112233" style="color: #1e293b; text-decoration: none;">+7 (999) 111-22-33</a></p>
+                <p style="font-size: 1.2rem; margin-bottom: 12px;">📞 <strong>Инженер:</strong> <a href="tel:+79994445566" style="color: #1e293b; text-decoration: none;">+7 (999) 444-55-66</a></p>
+                <p style="font-size: 1.2rem; margin-bottom: 12px;">✉️ <strong>Email:</strong> <a href="mailto:info@vorota-vdom.ru" style="color: #f59e0b;">info@vorota-vdom.ru</a></p>
+                <p style="font-size: 1.2rem; margin-bottom: 12px;">📍 <strong>Адрес:</strong> г. Москва, ул. Строителей, 15</p>
+                <p style="font-size: 1.1rem; color: #64748b; margin-top: 20px;">🕒 Пн–Пт: 9:00 – 20:00, Сб: 10:00 – 18:00</p>
+            </div>
+            
+            <button id="showModalBtn" class="btn" style="font-size: 1.2rem; padding: 16px 40px; width: 100%;">Оставить заявку</button>
+            
+            <!-- Карта (опционально) -->
+            <div style="margin-top: 30px; border-radius: 16px; overflow: hidden;">
+                <iframe src="https://yandex.ru/map-widget/v1/?ll=37.622504%2C55.753215&z=12&pt=37.622504,55.753215,pm2rdm&lang=ru_RU" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно с формой -->
+    <div id="modalForm" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 style="margin-bottom: 20px;">Быстрая заявка</h3>
+            <form id="modalContactForm" action="submit.php" method="post">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="email" placeholder="Email">
+                <input type="tel" name="phone" placeholder="Телефон" required id="modalPhone" inputmode="numeric">
+                
+                <div style="display: flex; align-items: flex-start; gap: 10px; margin: 15px 0;">
+                    <input type="checkbox" id="modalPrivacy" name="privacy" required style="width: 18px; height: 18px;">
+                    <label for="modalPrivacy" style="font-size: 0.9rem;">
+                        Согласен с 
+                        <a href="privacy.html" target="_blank" style="color: #f59e0b;">политикой конфиденциальности</a>
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn" style="width: 100%;">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Бренды снизу -->
+    <div class="brands-bar" style="border-top:1px solid #ddd; border-bottom:none; margin-top: 40px;">
+        <div class="container">
+            <div class="brand-logos">
+            <a href="https://www.hormann.ru/" target="_blank" rel="noopener noreferrer">
+                <img src="images/brands/hormann.png" alt="Hörmann">
+            </a>
+            <a href="https://www.camerussia.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/brands/came.png" alt="CAME">
+            </a>
+            <a href="https://www.niceforyou.com/ru/" target="_blank" rel="noopener noreferrer">
+                <img src="images/brands/nice.png" alt="Nice">
+            </a>
+            <a href="https://doorhan.ru/" target="_blank" rel="noopener noreferrer">
+                <img src="images/brands/doorhan.png" alt="DoorHan">
+            </a>
+            <a href="https://alutech.ru/" target="_blank" rel="noopener noreferrer">
+                <img src="images/brands/alutech.png" alt="Alutech">
+            </a>
+        </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="portfolio.html">Портфолио</a></li>
+                        <li><a href="pricing.html">Прайс</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="certificates.html">Сертификаты</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="privacy.html">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <p>📞 +7 (999) 123-45-67</p>
+                    <p>✉️ info@vorota-vdom.ru</p>
+                    <p>📍 г. Москва, ул. Строителей, 15</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2026 Ваши Ворота. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
